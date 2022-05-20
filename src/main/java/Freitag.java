@@ -1,5 +1,6 @@
 import org.apache.commons.lang3.StringUtils;
 import java.util.Scanner;
+import java.awt.event.KeyEvent;
 
 public class Freitag {
     public static void main(String[] args) {
@@ -9,15 +10,15 @@ public class Freitag {
         for (int i = 1; i < 6; i++) {
             System.out.println("Passwort " + i + ":");
             passwordList[i] = scanner.nextLine();
-
-        }
+            }
 
 
         for (int i = 1; i < 6; i++) {
-            System.out.println("Passwort " + i + ":" + passwordList[i] + "(" +
-                    passwordLeastLengthCheck(passwordList[i], 4)+ ")"
-                    + ", " + passwordContainsAtLeastOneLetterAndOneInt(passwordList[i])+ ")"
-                    + ", " + passwordContainsLowerCaseAndUpperCaseLetters(passwordList[i])+ ")");
+            System.out.println("Passwort " + i + ":" + passwordList[i] + "\nMindeslänge erfüllt: " +
+                    passwordLeastLengthCheck(passwordList[i], 4)+
+                     "\nenthält Buchstaben und Zahlen: " + passwordContainsAtLeastOneLetterAndOneInt(passwordList[i])+
+                    "\nenthält Klein- und Großbuchstaben: " + passwordContainsLowerCaseAndUpperCaseLetters(passwordList[i]) +
+                    "\n");
         }
     }
 

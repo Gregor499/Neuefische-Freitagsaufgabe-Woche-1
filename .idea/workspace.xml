@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt">
+    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/KeyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Freitag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Freitag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FreitagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FreitagTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Freitag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Freitag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FreitagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FreitagTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653052468362</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt">
+      <created>1653057464041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653057464041</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +169,8 @@
     <MESSAGE value="Basisaufgabe Freitag funktioniert" />
     <MESSAGE value="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben" />
     <MESSAGE value="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt" />
+    <MESSAGE value="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
