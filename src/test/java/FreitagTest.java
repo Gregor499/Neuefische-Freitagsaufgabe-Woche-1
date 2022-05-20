@@ -9,63 +9,64 @@ public class FreitagTest {
 
     @Test
     void tooShortPasswordAtLeast8Signs() {
-        assertEquals(false, Freitag.passwortLeastLengthCheck("test",8));
+        assertEquals(false, Freitag.passwordLeastLengthCheck("test",8));
     }
 
     @Test
     void LongEnoughPasswordAtLeast8Signs() {
-        assertEquals(true, Freitag.passwortLeastLengthCheck("testtest",8));
+        assertEquals(true, Freitag.passwordLeastLengthCheck("testtest",8));
     }
 
     @Test
     void LongEnoughPasswordAtLeastMinus5Signs() {
-        assertEquals(true, Freitag.passwortLeastLengthCheck("testtest", -5));
+        assertEquals(true, Freitag.passwordLeastLengthCheck("testtest", -5));
     }
 
 
     @Test
     void passwordWithAtLeastOneLetterAndOneInt() {
-        assertEquals(true, Freitag.passwortContainsAtLeastOneLetterAndOneInt("test1234"));
+        assertEquals(true, Freitag.passwordContainsAtLeastOneLetterAndOneInt("test1234"));
     }
 
     @Test
     void passwordWithOnlyLetters() {
-        assertEquals(false, Freitag.passwortContainsAtLeastOneLetterAndOneInt("test"));
+        assertEquals(false, Freitag.passwordContainsAtLeastOneLetterAndOneInt("test"));
     }
 
     @Test
     void passwordWithOnlyInts() {
-        assertEquals(false, Freitag.passwortContainsAtLeastOneLetterAndOneInt("1234"));
+        assertEquals(false, Freitag.passwordContainsAtLeastOneLetterAndOneInt("1234"));
     }
 
     @Test
     void emptyPassword() {
-        assertEquals(false, Freitag.passwortContainsAtLeastOneLetterAndOneInt(""));
+
+        assertEquals(false, Freitag.passwordContainsAtLeastOneLetterAndOneInt(""));
     }
 
 
     @Test
     void passwordWithLowerCaseAndUpperCase() {
-        assertEquals(true, Freitag.passwortContainsLowerCaseAndUpperCaseLetters("aA"));
+        assertEquals(true, Freitag.passwordContainsLowerCaseAndUpperCaseLetters("aA"));
     }
 
     @Test
     void passwordWithOnlyLowerCase() {
-        assertEquals(false, Freitag.passwortContainsLowerCaseAndUpperCaseLetters("aa"));
+        assertEquals(false, Freitag.passwordContainsLowerCaseAndUpperCaseLetters("aa"));
     }
 
     @Test
     void passwordWithOnlyUpperCase() {
-        assertEquals(false, Freitag.passwortContainsLowerCaseAndUpperCaseLetters("AA"));
+        assertEquals(false, Freitag.passwordContainsLowerCaseAndUpperCaseLetters("AA"));
     }
 
     @Test
     void emptyPassword2() {
-        assertEquals(false, Freitag.passwortContainsLowerCaseAndUpperCaseLetters(""));
+        assertEquals(false, Freitag.passwordContainsLowerCaseAndUpperCaseLetters(""));
     }
 
     @Test
     void digitsAndLetters() {
-        assertEquals(false, Freitag.passwortContainsLowerCaseAndUpperCaseLetters("52252a"));
+        assertEquals(false, Freitag.passwordContainsLowerCaseAndUpperCaseLetters("52252a"));
     }
 }

@@ -1,21 +1,38 @@
 import org.apache.commons.lang3.StringUtils;
+import java.util.Scanner;
 
 public class Freitag {
     public static void main(String[] args) {
-        System.out.println(passwortContainsAtLeastOneLetterAndOneInt("test1234"));
+        Scanner scanner = new Scanner(System.in);
+        String[] passwordList = new String[6];
+
+        for (int i = 1; i < 6; i++) {
+            System.out.println("Passwort " + i + ":");
+            passwordList[i] = scanner.nextLine();
+
+        }
+
+
+        for (int i = 1; i < 6; i++) {
+            System.out.println("Passwort " + i + ":" + passwordList[i] + "(" +
+                    passwordLeastLengthCheck(passwordList[i], 4)+ ")"
+                    + ", " + passwordContainsAtLeastOneLetterAndOneInt(passwordList[i])+ ")"
+                    + ", " + passwordContainsLowerCaseAndUpperCaseLetters(passwordList[i])+ ")");
+        }
     }
 
-    public static boolean passwortLeastLengthCheck(String passwort, int least_length) {
-        return passwort.length() >= least_length;
+
+    public static boolean passwordLeastLengthCheck(String password, int least_length) {
+        return password.length() >= least_length;
     }
 
-    public static boolean passwortContainsAtLeastOneLetterAndOneInt(String passwort) {
-        char[] letters = passwort.toCharArray();
+    public static boolean passwordContainsAtLeastOneLetterAndOneInt(String password) {
+        char[] letters = password.toCharArray();
         boolean a = false;
         boolean atLeastOneInt = false;
         boolean atLeastOneTimeLetter = false;
 
-        for (int i = 0; i < passwort.length(); i++) {
+        for (int i = 0; i < password.length(); i++) {
             if (a = Character.isDigit(letters[i])) {
                 atLeastOneInt = true;
             } else if (a = Character.isLetter(letters[i])) {
@@ -25,13 +42,13 @@ public class Freitag {
         return (atLeastOneInt && atLeastOneTimeLetter);
     }
 
-    public static boolean passwortContainsLowerCaseAndUpperCaseLetters(String passwort) {
-        char[] letters = passwort.toCharArray();
+    public static boolean passwordContainsLowerCaseAndUpperCaseLetters(String password) {
+        char[] letters = password.toCharArray();
         boolean a = false;
         boolean atLeastOneLowerCase = false;
         boolean atLeastOneUpperCase = false;
 
-        for (int i = 0; i < passwort.length(); i++) {
+        for (int i = 0; i < password.length(); i++) {
             if (a = Character.isLowerCase(letters[i])) {
                 atLeastOneLowerCase = true;
             } else if (a = Character.isUpperCase(letters[i])) {

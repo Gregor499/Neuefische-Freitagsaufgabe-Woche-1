@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben">
+    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Freitag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Freitag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FreitagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FreitagTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Freitag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Freitag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FreitagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FreitagTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.FreitagTest">
+  <component name="RunManager" selected="Application.Freitag">
     <configuration name="Freitag" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Freitag" />
       <module name="Neuefische-Freitagsaufgabe-Woche-1" />
@@ -136,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653051703803</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt">
+      <created>1653052468362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653052468362</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +162,17 @@
     <MESSAGE value="default Maven file" />
     <MESSAGE value="Basisaufgabe Freitag funktioniert" />
     <MESSAGE value="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben" />
-    <option name="LAST_COMMIT_MESSAGE" value="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben" />
+    <MESSAGE value="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
