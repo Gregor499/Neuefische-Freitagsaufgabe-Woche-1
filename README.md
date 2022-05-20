@@ -1,0 +1,1 @@
+# Neuefische-Freitagsaufgabe-Woche-1
