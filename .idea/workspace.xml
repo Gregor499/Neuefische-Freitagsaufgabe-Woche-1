@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="Basisaufgabe Freitag funktioniert">
+    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Freitag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Freitag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FreitagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FreitagTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Freitag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Freitag.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653049418742</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben">
+      <created>1653051703803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653051703803</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,26 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="default Maven file" />
     <MESSAGE value="Basisaufgabe Freitag funktioniert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basisaufgabe Freitag funktioniert" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/FreitagTest.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/FreitagTest.java</url>
-          <line>25</line>
-          <properties class="FreitagTest" method="passwordWithAtLeastOneLetterAndOneInt">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben" />
+    <option name="LAST_COMMIT_MESSAGE" value="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben" />
   </component>
 </project>

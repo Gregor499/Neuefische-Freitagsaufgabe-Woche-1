@@ -18,27 +18,26 @@ public class Freitag {
         for (int i = 0; i < passwort.length(); i++) {
             if (a = Character.isDigit(letters[i])) {
                 atLeastOneInt = true;
-            } else if (a = Character.isAlphabetic(letters[i])) {
+            } else if (a = Character.isLetter(letters[i])) {
                 atLeastOneTimeLetter = true;
             }
         }
         return (atLeastOneInt && atLeastOneTimeLetter);
     }
 
-    public static boolean passwortIfLowerCaseAndUpperCaseLetters(String passwort) {
+    public static boolean passwortContainsLowerCaseAndUpperCaseLetters(String passwort) {
         char[] letters = passwort.toCharArray();
         boolean a = false;
-        boolean result = false;
-        boolean atLeastOneTimeFalse = false;
+        boolean atLeastOneLowerCase = false;
+        boolean atLeastOneUpperCase = false;
 
         for (int i = 0; i < passwort.length(); i++) {
-            a = Character.isDigit(letters[i]);
-            if (a == true) {
-                result = true;
-                break;
+            if (a = Character.isLowerCase(letters[i])) {
+                atLeastOneLowerCase = true;
+            } else if (a = Character.isUpperCase(letters[i])) {
+                atLeastOneUpperCase = true;
             }
-            atLeastOneTimeFalse = true;
         }
-        return (result && atLeastOneTimeFalse);
+        return (atLeastOneLowerCase && atLeastOneUpperCase);
     }
 }
