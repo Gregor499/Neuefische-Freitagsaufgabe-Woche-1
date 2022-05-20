@@ -23,22 +23,22 @@ public class FreitagTest {
     }
 
     @Test
-    void passwordWithBothAtLeastOneNonIntAndOneInt() {
-        assertEquals(true, Freitag.passwortIfNonIntAndInt("test1234"));
+    void passwordWithAtLeastOneLetterAndOneInt() {
+        assertEquals(true, Freitag.passwortContainsAtLeastOneLetterAndOneInt("test1234"));
     }
 
     @Test
-    void passwordWithOnlyNonInts() {
-        assertEquals(false, Freitag.passwortIfNonIntAndInt("test"));
+    void passwordWithOnlyLetters() {
+        assertEquals(false, Freitag.passwortContainsAtLeastOneLetterAndOneInt("test"));
     }
 
     @Test
     void passwordWithOnlyInts() {
-        assertEquals(false, Freitag.passwortIfNonIntAndInt("1234"));
+        assertEquals(false, Freitag.passwortContainsAtLeastOneLetterAndOneInt("1234"));
     }
 
     @Test
     void emptyPasswort() {
-        assertEquals(false, Freitag.passwortIfNonIntAndInt(""));
+        assertEquals(false, Freitag.passwortContainsAtLeastOneLetterAndOneInt(""));
     }
 }
