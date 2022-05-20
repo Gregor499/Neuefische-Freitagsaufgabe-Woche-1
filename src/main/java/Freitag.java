@@ -1,21 +1,30 @@
 import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
 import java.util.Scanner;
-import java.awt.event.KeyEvent;
 
 public class Freitag {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] passwordList = new String[6];
+        String[] passwordList = new String[100];
+        Arrays.fill(passwordList, "");
+        int i=0;
 
-        for (int i = 1; i < 6; i++) {
-            System.out.println("Passwort " + i + ":");
-            passwordList[i] = scanner.nextLine();
+        System.out.println("Eingabe abbrechen mit leerer Eingabe und dann ENTER");
+        while(true) {
+            System.out.println("Passwort " + (i+1) + ":");
+            String line = scanner.nextLine();
+            if (line == null || "".equals(line)){
+                break;
             }
+            passwordList[i] = line;
+            i++;
+        }
 
 
-        for (int i = 1; i < 6; i++) {
-            System.out.println("Passwort " + i + ":" + passwordList[i] + "\nMindeslänge erfüllt: " +
-                    passwordLeastLengthCheck(passwordList[i], 4)+
+        for (int i1 = 0; i1 < passwordList.length; i1++) {
+            System.out.println("Passwort " + (i1+1) + ":" + passwordList[i1] + "\nMindeslänge erfüllt: " +
+                    passwordLeastLengthCheck(passwordList[i1], 4)+
                      "\nenthält Buchstaben und Zahlen: " + passwordContainsAtLeastOneLetterAndOneInt(passwordList[i])+
                     "\nenthält Klein- und Großbuchstaben: " + passwordContainsLowerCaseAndUpperCaseLetters(passwordList[i]) +
                     "\n");

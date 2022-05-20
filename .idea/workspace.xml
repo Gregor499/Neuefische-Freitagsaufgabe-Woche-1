@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/KeyListener.java" afterDir="false" />
+    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="Ausgabe optimiert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Freitag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Freitag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KeyListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Freitag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Freitag.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653057464041</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ausgabe optimiert">
+      <created>1653058959721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653058959721</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +177,8 @@
     <MESSAGE value="nimmt jetzt statt jedem Zeichen, nur noch Buchstaben" />
     <MESSAGE value="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt" />
     <MESSAGE value="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt" />
+    <MESSAGE value="Ausgabe optimiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ausgabe optimiert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
