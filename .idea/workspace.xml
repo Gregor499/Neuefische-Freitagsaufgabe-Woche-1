@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="Ausgabe optimiert">
+    <list default="true" id="5913462f-5db5-4ae4-8f08-d7b487d0a3d8" name="Changes" comment="Ausgabe vorzeitig abbrechen eingefügt&#10;Limit auf 100 Passwörter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Freitag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Freitag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KeyListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Freitag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Freitag.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Freitag">
+  <component name="RunManager" selected="JUnit.FreitagTest">
     <configuration name="Freitag" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Freitag" />
       <module name="Neuefische-Freitagsaufgabe-Woche-1" />
@@ -90,16 +88,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FreitagTest.tooShortPasswordAtLeast8Signs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Neuefische-Freitagsaufgabe-Woche-1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FreitagTest" />
+      <option name="METHOD_NAME" value="tooShortPasswordAtLeast8Signs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Freitag" />
       <item itemvalue="JUnit.FreitagTest" />
       <item itemvalue="JUnit.FreitagTest.test0" />
       <item itemvalue="JUnit.FreitagTest.test5" />
       <item itemvalue="JUnit.FreitagTest.test6" />
+      <item itemvalue="JUnit.FreitagTest.tooShortPasswordAtLeast8Signs" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FreitagTest" />
+        <item itemvalue="JUnit.FreitagTest.tooShortPasswordAtLeast8Signs" />
         <item itemvalue="JUnit.FreitagTest.test6" />
         <item itemvalue="JUnit.FreitagTest.test5" />
         <item itemvalue="JUnit.FreitagTest.test0" />
@@ -157,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653058959721</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ausgabe vorzeitig abbrechen eingefügt&#10;Limit auf 100 Passwörter">
+      <created>1653061104857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653061104857</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +195,8 @@
     <MESSAGE value="passwortContainsLowerCaseAndUpperCaseLetters hinzugefügt" />
     <MESSAGE value="Klein-/Großbuchstaben Abfrage hinzugefügt&#10;Listenvalidierung hinzugefügt" />
     <MESSAGE value="Ausgabe optimiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ausgabe optimiert" />
+    <MESSAGE value="Ausgabe vorzeitig abbrechen eingefügt&#10;Limit auf 100 Passwörter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ausgabe vorzeitig abbrechen eingefügt&#10;Limit auf 100 Passwörter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -187,6 +205,11 @@
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="12" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Freitag.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
